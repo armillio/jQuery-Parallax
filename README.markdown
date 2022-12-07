@@ -3,16 +3,30 @@ jQuery Parallax
 
 jQuery Parallax is a script that simulates the parallax effect as seen on [nikebetterworld.com](http://www.nikebetterworld.com/).
 
-Plugin: jQuery Parallax  
-Version: 1.1.3
-Author: [Ian Lunn](http://www.ianlunn.co.uk/)  
+Plugin: jQuery Parallax
+Version: 1.2.0
+
+Modification
+
+Author: Armando Carmona
+Twitter:  [@armillio](http://www.twitter.com/armillio)
+
+Original Author
+Author: [Ian Lunn](http://www.ianlunn.co.uk/)
 Twitter: [@IanLunn](http://www.twitter.com/IanLunn)
-Demo: [jQuery Vertical Parallax Demo](http://www.ianlunn.co.uk/plugins/jquery-parallax/)  
-Tutorial: [Nikebetterworld Parallax Effect Demo](http://www.ianlunn.co.uk/blog/code-tutorials/recreate-nikebetterworld-parallax/)  
+Demo: [jQuery Vertical Parallax Demo](http://www.ianlunn.co.uk/plugins/jquery-parallax/)
+Tutorial: [Nikebetterworld Parallax Effect Demo](http://www.ianlunn.co.uk/blog/code-tutorials/recreate-nikebetterworld-parallax/)
 
 Dual licensed under the MIT and GPL licenses:
 http://www.opensource.org/licenses/mit-license.php
 http://www.gnu.org/licenses/gpl.html
+
+Changes
+-------
+
+11/21/2022
+
+- Using Images instead of Background Images
 
 Updates
 -------
