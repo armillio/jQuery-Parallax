@@ -20,25 +20,31 @@ http://www.gnu.org/licenses/gpl.html
   var $window = $(window);
   var windowHeight = $window.height();
 
-  $window.resize(function () {
+  $(window).on('resize', function() {
     windowHeight = $window.height();
   });
+
 
   $.fn.parallax = function (
     xpos,
     speedFactor,
     outerHeight = true,
-    notBackground = false
+    onlyLoadOnScroll = true,
+    notBackground = false,
+    containerHeight = 0
   ) {
     var $this = $(this);
     var getHeight;
     var firstTop;
-    var paddingTop = 0;
 
     //get the starting position of each element to have parallax applied to it
     $this.each(function () {
       firstTop = $this.offset().top;
     });
+
+    if(containerHeight > 0) {
+      windowHeight = containerHeight;
+    }
 
     if (outerHeight) {
       getHeight = function (jqo) {
@@ -80,7 +86,9 @@ http://www.gnu.org/licenses/gpl.html
       });
     }
 
-    $window.bind("scroll", update).resize(update);
-    update();
+    $(window).on("scroll resize", update);
+    if (onlyLoadOnScroll) {
+      update();
+    }
   };
 })(jQuery);
